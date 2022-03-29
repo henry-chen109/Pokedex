@@ -1,1 +1,3 @@
-# Pokedex
+# [WORK IN PROGRESS] Pokedex
+
+Pokedex!!
