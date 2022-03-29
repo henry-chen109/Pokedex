@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <div class="landing-container">
+        <h1 id="header-title">Pokédex</h1>
+        <div class="search-wrapper">
+            <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+            <input class="search-box" type="text" placeholder="Enter the name of a Pokémon">
+        </div>
+
+        <div class="filters">
+            <button class="gen-button" id="all-pokemon">ALL</button>
+            <button class="gen-button" id="gen-one">Gen I</button>
+            <button class="gen-button" id="gen-two">Gen II</button>
+            <button class="gen-button" id="gen-three">Gen III</button>
+            <button class="gen-button" id="gen-four">Gen IV</button>
+            <button class="gen-button" id="gen-five">Gen V</button>
+            <button class="gen-button" id="gen-six">Gen VI</button>
+            <button class="gen-button" id="gen-seven">Gen VII</button>
+            <button class="gen-button" id="gen-eight">Gen VIII</button>
+        </div>
+    </div>
+
+    <div class="pop-up-generation-container">
+        <div class="generation-head-wrapper">
+            <div class="generation-heading"></div>
+            <img id="close-pop-up-gen-button" src="./images/close_button.svg">
+        </div>
+        <div class="pokemon-boxes-container">
+        </div>
+
+        <div class="footer-pop-up-generation"></div>
+    </div>
+
+    <div class="inner-pokemon-container">
+        <div class="inner-pokemon-head-wrapper">
+            <div class="inner-pokemon-name"></div>
+            <img id="inner-pop-up-close-button" src="./images/close_button.svg">
+        </div>
+        <div class="pokemon-information-container"></div>
+        <div class="footer-pop-up-generation"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
