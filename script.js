@@ -37,9 +37,14 @@ $(function() {
             'dataType': 'json'
         }).done(function(data) {
 
-            data['results'].forEach(pokemon => {
+            // data['results'].forEach(pokemon => {
+            //     appendPokemon(pokemon['url']);
+            // });
+
+            for(const pokemon of data['results']) {
                 appendPokemon(pokemon['url']);
-            });
+                // await new Promise( resolve => setTimeout(resolve, 500));
+            }
 
         }).fail(function() {
             console.log('Fetch failed');
@@ -71,7 +76,6 @@ $(function() {
         }).fail(function() {
             console.log('Append Failed');
         })
-
     }
 
     function addTypes(id, pokeTypes) {
