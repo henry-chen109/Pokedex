@@ -228,9 +228,11 @@ $(function() {
             .fail(function() {
                 alert('No such pokemon exists.');
             })
+
+            this.blur();
         }
 
-        this.blur();
+        
     })
 
     $(window).resize(function() {
