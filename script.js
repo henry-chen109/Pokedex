@@ -218,16 +218,19 @@ $(function() {
 
     $('.search-box').keyup(function(key) {
         if (key.keyCode === 13 ) {
+            $()
             let pokeName = this.value.toLowerCase();
             $.getJSON(`https://pokeapi.co/api/v2/pokemon/${pokeName }`, function(pokedata) {
                 changeInnerPokeName(pokedata['id'], pokeName);
                 appendPokemonStats(pokedata['id']);
-            $('.inner-pokemon-container').slideDown();
+                $('.inner-pokemon-container').slideDown();
             })
             .fail(function() {
                 alert('No such pokemon exists.');
             })
         }
+
+        this.blur();
     })
 
     $(window).resize(function() {
